@@ -4,7 +4,7 @@
             <img class="foto-personale" src="/img/foto-personale.jpeg" alt="">
         </div>
         <div class="col-6 padding ms-description">
-            Ciao a tutti, sono <strong> Giovanni Sorrentino,</strong>  Junior Full Stack Web Developer. 
+            Ciao a tutti, sono  <strong> Giovanni Sorrentino,</strong>  Junior Full Stack Web Developer. 
             Ho recentemente completato un corso intensivo di formazione presso <strong>Boolean,</strong> 
              una delle accademie più rinomate in Italia, il 17 luglio 2024.
               Durante il mio percorso, ho acquisito solide competenze sia in <strong>front-end</strong>  che in <strong>back-end</strong>  development. 
