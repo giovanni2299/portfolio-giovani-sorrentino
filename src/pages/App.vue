@@ -4,6 +4,7 @@ import MainPage from '../components/MainPage.vue';
 import FooterPage from '../components/FooterPage.vue';
 
 import store from '../../store.js';
+import { RouterLink } from 'vue-router';
 
 
 
@@ -41,7 +42,8 @@ export default {
     </header>
 
     <main class="flex-grow-1 pb-3">
-      <MainPage />
+      <RouterView/>
+      
     </main>
 
     <footer class="d-flex">
