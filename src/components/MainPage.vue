@@ -1,5 +1,5 @@
 <template>
-    <section class="d-flex">
+    <section class="ms-backgroudcolor-light padding d-flex">
         <div class="col-6 padding text-center">
             <img class="foto-personale" src="/img/foto-personale.jpeg" alt="">
         </div>
@@ -63,9 +63,11 @@
 @use '../../style/partials/reset.scss';
 
 .foto-personale{
+    object-fit: cover;
     width: 300px;
-    border-radius: 25px;
-    box-shadow: 2px 5px 5px 2px lightgrey;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px 2px rgb(153, 153, 153);
 }
 
 .ms-description{
@@ -79,6 +81,10 @@
 
 .ms-fix{
     display: block ruby;
+}
+
+.ms-backgroudcolor-light{
+    background-color: rgb(215, 215, 215);
 }
 
 .ms-background{

@@ -1,11 +1,15 @@
 <template>
    
         <div class="ms_col col-3 text-center">
-            Logo
+            <RouterLink class="color" :to="{name:'home'}" >
+                Logo
+            </RouterLink>
         </div>
         <div class="ms_col col-3 text-center">
-            
-            Progetti
+            <RouterLink class="color" :to="{name:'projects'}" >
+                Progetti
+
+            </RouterLink>
         </div>
         <div class="ms_col col-3 text-center">
             Scarica CV
@@ -23,5 +27,9 @@
 .ms_col{
     align-self: center;
     font-size: 18px;
+}
+.color{
+    color: currentColor;
+    text-decoration: none;
 }
 </style>

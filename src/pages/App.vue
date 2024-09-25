@@ -30,7 +30,7 @@ export default {
     }
   },
   mounted() {
-    this.store.data.fetchdata()
+    this.store.data.getProjects()
   },
 }
 </script>
@@ -41,12 +41,12 @@ export default {
       <HeaderPage/>
     </header>
 
-    <main class="flex-grow-1 pb-3">
+    <main class="flex-grow-1">
       <RouterView/>
       
     </main>
 
-    <footer class="d-flex">
+    <footer class="d-flex align-items-center padding">
       <FooterPage/>
     </footer>
   </section>
@@ -57,12 +57,22 @@ export default {
 @use '../style/partials/palette' as *;
 @use '../style/general';
 
-
+.padding{
+    padding: 20px 0;
+}
 
 header{
   min-height: 90px;
-  
+  background-color: #19AE47;
+  border: 5px  solid gold;
 }
 
+
+footer{
+  min-height: 90px;
+  background-color: #19AE47;
+  border-bottom: 5px solid gold;
+
+}
 
 </style>

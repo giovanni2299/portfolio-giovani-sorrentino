@@ -14,7 +14,7 @@ const store = reactive({
         projectsingle: '',
 
 
-        async fetchdata() {
+        async getProjects() {
 
 
             await store.octokit.request(`GET /user/repos?per_page=1000`, {
@@ -99,7 +99,7 @@ const store = reactive({
         //     })
         // }
 
-        async fetchproject(id) {
+        async getSingleProject(id) {
             await store.octokit.request(`GET /repositories/${id}`, {
                 headers: {
                     'X-GitHub-Api-Version': '2022-11-28' // Rimosso gli spazi extra
