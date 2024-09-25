@@ -1,39 +1,80 @@
 <template>
     <div class="container padding">
         <div class="row g-3">
-            <div v-for="project in store.data.projects" class="col-4">
-                <CardComponents :item="project"/>
-                
+            <div v-for="project in currentProjects" class="col-4">
+                <CardComponents :item="project" />
+
             </div>
             
+            <div class="d-flex justify-content-around">
+                <div @click="previousPage" :disabled="currentPage === 1" class="bg-sand-botton m-3">indietro</div>
+                <span class="m-3 c-sand align-self-center description">Pagina {{ currentPage }} di {{ totalPages
+                    }}</span>
+                <div @click="nextPage" :disabled="currentPage === totalPages" class="bg-sand-botton m-3">avanti
+                </div>
+            </div>
         </div>
 
     </div>
+
+
 </template>
 
 <script>
 import CardComponents from '../components/CardComponents.vue'
 import store from '../../store'
 
-    export default {
-        components:{
-            CardComponents,
+export default {
+    components: {
+        CardComponents,
+    },
+    data() {
+        return {
+            store,
+            isLoading: true,
+            currentPage: 1,
+            projectsPerPage: 6
+        };
+    },
+    computed: {
+        totalPages() {
+            return Math.ceil(this.store.data.viewProjects.length / this.projectsPerPage);
         },
-        data(){
-            return{
-                store
+        currentProjects() {
+            const start = (this.currentPage - 1) * this.projectsPerPage;
+            const end = start + this.projectsPerPage;
+            return this.store.data.viewProjects.slice(start, end);
+        }
+    },
+    mounted() {
+
+        this.loadProjects();
+    },
+    methods: {
+        loadProjects() {
+
+            setTimeout(() => {
+
+                this.isLoading = false;
+            }, 2000);
+        },
+        nextPage() {
+            if (this.currentPage < this.totalPages) {
+                this.currentPage++;
             }
         },
-        mounted(){
-            // this.store.data.getProjects()
+        previousPage() {
+            if (this.currentPage > 1) {
+                this.currentPage--;
+            }
         }
     }
+};
+
 </script>
 
 <style lang="scss" scoped>
-
-.padding{
+.padding {
     padding: 20px;
 }
-
 </style>

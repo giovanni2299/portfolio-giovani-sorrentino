@@ -38,6 +38,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .img-projects{
-    max-width: 200px;
+    max-width: 100%;
+    max-height: 100px;
 }
 </style>
