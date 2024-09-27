@@ -6,11 +6,11 @@
 
             </div>
             
-            <div class="d-flex justify-content-around">
-                <div @click="previousPage" :disabled="currentPage === 1" class="bg-sand-botton m-3">indietro</div>
+            <div class="d-flex justify-content-between">
+                <div @click="previousPage" :disabled="currentPage === 1" class="prev align-self-center ">indietro</div>
                 <span class="m-3 c-sand align-self-center description">Pagina {{ currentPage }} di {{ totalPages
                     }}</span>
-                <div @click="nextPage" :disabled="currentPage === totalPages" class="bg-sand-botton m-3">avanti
+                <div @click="nextPage" :disabled="currentPage === totalPages" class="next align-self-center ">avanti
                 </div>
             </div>
         </div>
@@ -76,5 +76,10 @@ export default {
 <style lang="scss" scoped>
 .padding {
     padding: 20px;
+}
+
+.next, .prev{
+    cursor: pointer;
+    font-size: 18px;
 }
 </style>
