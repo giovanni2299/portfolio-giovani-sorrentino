@@ -63,15 +63,19 @@ export default {
 
 header{
   min-height: 90px;
-  background-color: #19AE47;
-  border: 5px  solid gold;
+  background-color: #1E2A38;
+  border-top: 5px  solid gold;
+  border-bottom: 5px  solid gold;
+  color: white;
 }
 
 
 footer{
   min-height: 90px;
-  background-color: #19AE47;
+  background-color: #1E2A38;
   border-bottom: 5px solid gold;
+  color: white;
+
 
 }
 

@@ -79,7 +79,19 @@ export default {
 }
 
 .next, .prev{
+    padding: 5px;
     cursor: pointer;
     font-size: 18px;
+}
+
+.next:hover{
+  background-color:  #8FBF93;
+  border-radius: 5px;
+}
+.prev:hover{
+   background-color:  rgb(196, 99, 99);
+  border-radius: 5px;
+
+
 }
 </style>

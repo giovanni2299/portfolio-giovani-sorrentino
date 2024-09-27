@@ -37,6 +37,12 @@ import { RouterLink } from 'vue-router';
     height: 100%;
 }
 
+.ms-card:hover{
+    width: 420px;
+    box-shadow: 2px 5px 5px 2px #8FBF93;
+    
+}
+
 .img-projects{
     max-width: 100%;
     max-height: 100px;

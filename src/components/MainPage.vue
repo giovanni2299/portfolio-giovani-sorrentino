@@ -1,68 +1,142 @@
 <template>
-    <section class="ms-backgroudcolor-light padding d-flex">
+    <section class="ms-backgroudcolor-light padding d-flex ms_border_b">
         <div class="col-6 padding text-center">
             <img class="foto-personale" src="/img/foto-personale.jpeg" alt="">
         </div>
         <div class="col-6 padding ms-description">
-            Ciao a tutti, sono  <strong> Giovanni Sorrentino,</strong>  Junior Full Stack Web Developer. 
-            Ho recentemente completato un corso intensivo di formazione presso <strong>Boolean,</strong> 
-             una delle accademie più rinomate in Italia, il 17 luglio 2024.
-              Durante il mio percorso, ho acquisito solide competenze sia in <strong>front-end</strong>  che in <strong>back-end</strong>  development. 
-              Ho creato questo portfolio per mettere in pratica ciò che ho appreso e per mostrarvi alcuni dei progetti che ho sviluppato durante il mio percorso formativo.
+            Ciao a tutti, sono <strong> <mark>Giovanni Sorrentino,</mark> </strong> Junior Full Stack Web Developer.
+            Ho recentemente completato un corso intensivo di formazione presso <strong> <mark>Boolean</mark></strong> ,
+            una delle accademie più rinomate in Italia, il 17 luglio 2024.
+            Durante il mio percorso, ho acquisito solide competenze sia in <strong> <mark>front-end</mark> </strong> che
+            in <strong><mark>back-end</mark> </strong> development.
+            Ho creato questo portfolio per mettere in pratica ciò che ho appreso e per mostrarvi alcuni dei progetti che
+            ho sviluppato durante il mio percorso formativo.
+        </div>
+    </section>
+
+    <section class="ms-backgroudcolor-light">
+
+        <div class="ms_row ">
+            <div class="col-6 ms-flex text-center ms_py">
+                <img class="boolean-logo" src="/img/boolean.png" alt="">
+                <div class="download-attestato d-flex jusify-content-center mt-4">
+                    visualizza attestato
+                </div>
+
+            </div>
+            <div class="col-6 ms-description-boolean padding ">
+                <strong><mark>Boolean</mark> </strong> è la <strong><mark>1° tech academy online</mark> </strong> che
+                offre a chiunque l'opportunità di imparare da zero a creare una pagina web,
+                utilizzando i <strong><mark>linguaggi di programmazione</mark></strong> e i
+                <strong><mark>framework</mark></strong> più richiesti nel settore.
+                Durante il corso intensivo di 6 mesi, ho sviluppato competenze sia nel
+                <strong><mark>back-end</mark></strong> che nel <strong><mark>front-end</mark></strong>,
+                affrontando tecnologie fondamentali per lo sviluppo web. Alla fine del percorso formativo, ho
+                partecipato a un <strong><mark>progetto in Team</mark></strong> ,
+                dove abbiamo collaborato per realizzare un'<strong><mark>applicazione completa</mark></strong> che
+                riprendesse la famosa App di booking B&B, che abbiamo poi presentato a professori, tutor e project
+                manager,
+                mettendo in pratica tutto ciò che avevamo appreso.
+            </div>
         </div>
 
     </section>
 
-    <section class=" ms-background padding text-center ms-carousel-section ms-border">
-        <h2 class="padding text-light">Tecniche e Linguaggi appresi</h2>
-        <div class="col-12 ms-fix ms-background padding">
-            <div class="carosello">
-                <div class="carosello-item">
+    <section class=" ms-background-coral padding text-center ms-carousel-section ms-border">
+        <div class="container">
+            <h2 class="padding text-light">Tecniche e Linguaggi appresi</h2>
+            <div class="ms-fix ms-background-coral">
+                <div class="carosello d-none d-md-block">
+                    <div class="carosello-item col-3">
                         <img src="/img/bootstrap.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/css.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/html.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/js.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/laravel.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/mysql.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/php.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/sass.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/vue.png" alt="" class="carosello-img">
                     </div>
-                    <div class="carosello-item">
+                    <div class="carosello-item col-3">
                         <img src="/img/vite.png" alt="" class="carosello-img">
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="d-md-none d-sm-block">
+                <div>
+                    <img src="/img/bootstrap.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/css.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/html.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/js.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/laravel.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/mysql.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/php.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/sass.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/vue.png" alt="">
+                </div>
+                <div>
+                    <img src="/img/vite.png" alt="">
+                </div>
+            </div>
         
+
+
+
+
+        </div>
+
+
     </section>
+
+
 </template>
 
 <script>
-    export default {
-        
-    }
-</script >
+export default {
+
+}
+</script>
 
 <style lang="scss" scoped>
 @use '../../style/partials/reset.scss';
 
-.foto-personale{
+.foto-personale {
     object-fit: cover;
     width: 300px;
     height: 300px;
@@ -70,30 +144,77 @@
     box-shadow: 2px 5px 5px 2px rgb(153, 153, 153);
 }
 
-.ms-description{
-    font-size: 25px;
+.ms-description {
+    font-size: 22px;
+    line-height: 36px;
+
 }
 
-.padding{
+.download-attestato {
+    display: none;
+    max-width: 200px;
+    background-color: gold;
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+.ms-description-boolean {
+    line-height: 36px;
+    font-size: 22px;
+
+}
+
+.ms_row {
+    display: flex;
+}
+
+.ms-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ms_py {
+    padding-top: 100px;
+}
+
+.padding {
     padding: 30px;
 }
 
+.boolean-logo {
+    max-width: 300px;
+    border-radius: 15px;
+}
 
-.ms-fix{
+.ms-fix {
     display: block ruby;
 }
 
-.ms-backgroudcolor-light{
-    background-color: rgb(215, 215, 215);
-}
-
-.ms-background{
-    background-color: rgb(0, 0, 78);
+.ms-backgroudcolor-light {
+    background-color: #E9F4FB;
 }
 
 
-.ms-border{
-    border: 5px solid gold;
+.ms-background-coral {
+    background-color: #FF6B6B;
+}
+
+.ms-background {
+    background-color: rgb(0, 0, 135);
+}
+
+.ms_border_b {
+    border-bottom: 5px solid gold;
+}
+
+.ms-border {
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+
 }
 
 .carosello {
@@ -104,44 +225,53 @@
     transform: perspective(6000px) rotateY(0deg);
     animation: rotazione 45s linear infinite;
 }
+
 .carosello-item {
     position: absolute;
     width: 200px;
     height: 200px;
-    transform-origin:center;
+    transform-origin: center;
     transform-style: preserve-3d;
-    
+
 }
-.carosello-item:nth-child(1){
+
+.carosello-item:nth-child(1) {
     transform: rotateY(0deg) translateZ(450px);
 }
-.carosello-item:nth-child(2){
+
+.carosello-item:nth-child(2) {
     transform: rotateY(36deg) translateZ(450px);
 }
-.carosello-item:nth-child(3){
+
+.carosello-item:nth-child(3) {
     transform: rotateY(72deg) translateZ(450px);
 }
-.carosello-item:nth-child(4){
+
+.carosello-item:nth-child(4) {
     transform: rotateY(108deg) translateZ(450px);
 }
-.carosello-item:nth-child(5){
+
+.carosello-item:nth-child(5) {
     transform: rotateY(144deg) translateZ(450px);
 }
-.carosello-item:nth-child(6){
+
+.carosello-item:nth-child(6) {
     transform: rotateY(180deg) translateZ(450px);
 }
-.carosello-item:nth-child(7){
+
+.carosello-item:nth-child(7) {
     transform: rotateY(216deg) translateZ(450px);
 }
-.carosello-item:nth-child(8){
+
+.carosello-item:nth-child(8) {
     transform: rotateY(252deg) translateZ(450px);
 }
 
-.carosello-item:nth-child(9){
+.carosello-item:nth-child(9) {
     transform: rotateY(288deg) translateZ(450px);
 }
 
-.carosello-item:nth-child(10){
+.carosello-item:nth-child(10) {
     transform: rotateY(324deg) translateZ(450px);
 }
 
@@ -158,11 +288,4 @@
         transform: perspective(11000px) rotateY(360deg);
     }
 }
-
-
-
-
-
-
-
 </style>
