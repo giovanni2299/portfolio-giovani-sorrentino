@@ -64,8 +64,8 @@ export default {
 header{
   min-height: 90px;
   background-color: #1E2A38;
-  border-top: 5px  solid gold;
-  border-bottom: 5px  solid gold;
+  border-top: 5px  solid orange;
+  border-bottom: 5px  solid orange;
   color: white;
 }
 
@@ -73,7 +73,7 @@ header{
 footer{
   min-height: 90px;
   background-color: #1E2A38;
-  border-bottom: 5px solid gold;
+  border-bottom: 5px solid orange;
   color: white;
 
 

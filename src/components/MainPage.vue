@@ -200,7 +200,7 @@ export default {
 
 
 .ms-background-coral {
-    background-color: #FF6B6B;
+    background-color: #9e2424;
 }
 
 .ms-background {
@@ -208,12 +208,12 @@ export default {
 }
 
 .ms_border_b {
-    border-bottom: 5px solid gold;
+    border-bottom: 5px solid orange;
 }
 
 .ms-border {
-    border-top: 5px solid gold;
-    border-bottom: 5px solid gold;
+    border-top: 5px solid orange;
+    border-bottom: 5px solid orange;
 
 }
 
