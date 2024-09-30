@@ -22,8 +22,9 @@
                 <div class="download-attestato d-flex jusify-content-center mt-4" @click="opendocument()">
                     visualizza attestato
                 </div>
-                <div v-if="mostraImmagine">
-                    <img src="/img/Giovanni_Sorrentino" alt="">
+                <div v-if="mostraImmagine" class="overlay">
+                    <img src="/img/Giovanni_Sorrentino_Attestato.png" alt="">
+                    <span @click="opendocument()" class="">Chiudi</span>
                 </div>
 
             </div>
@@ -136,6 +137,11 @@ export default {
         return{
             mostraImmagine:false,
         }
+    },
+    methods:{
+        opendocument(){
+            this.mostraImmagine = !this.mostraImmagine
+        }
     }
 }
 </script>
@@ -164,6 +170,16 @@ export default {
     border-radius: 20px;
     padding: 12px;
     cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
 }
 
 
