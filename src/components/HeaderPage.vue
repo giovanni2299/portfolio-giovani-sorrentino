@@ -11,8 +11,15 @@
 
             </RouterLink>
         </div>
-        <div class="ms_col col-3 text-center">
-            Scarica CV
+        <div class="ms_col row col-3 text-center">
+            
+            <div class="col-6">
+                <a href="/img/Giovanni_Sorrentino CV.pdf">
+                    IT_CV
+
+                </a>
+            </div>
+            <div class="col-6">EN_CV</div>
         </div>
   
     
