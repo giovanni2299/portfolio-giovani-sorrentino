@@ -6,7 +6,7 @@
             </RouterLink>
         </div>
         <div class="ms_col col-3 text-center">
-            <RouterLink class="color" :to="{name:'projects'}" >
+            <RouterLink class="color ms_hover" :to="{name:'projects'}" >
                 Progetti
 
             </RouterLink>
@@ -14,13 +14,22 @@
         <div class="ms_col row col-3 text-center">
             
             <div class="col-6">
-                <a class="ms_a" href="/img/Giovanni_Sorrentino_CV.pdf" download="Giovanni_Sorrentino_CV.pdf">
-                    IT_CV
-                </a>
+                <span class="ms_a">
+                    <img class="download-img" src="/img/dowload_icon.png" alt="">
+                    <a href="/img/Giovanni_Sorrentino_CV.pdf" download="Giovanni_Sorrentino_CV.pdf">
+                        IT_CV
+                    </a>
+
+                </span>
             </div>
             <div class="col-6">
-                <a href=""></a>
-                EN_CV
+                <span class="ms_a">
+                    <img class="download-img" src="/img/dowload_icon.png" alt="">
+                    <a href="/img/Giovanni_Sorrentino_CV_EN.pdf" download="Giovanni_Sorrentino_CV_EN.pdf">
+                        EN_CV
+                    </a>
+
+                </span>
             </div>
         </div>
   
@@ -39,9 +48,16 @@
     font-size: 20px;
 }
 
-.ms_a{
+.ms_a > a{
     text-decoration: none;
     color: currentColor;
+}
+
+.ms_a:hover{
+    padding-bottom: 5px;
+    color: orange;
+    box-shadow: 0px 2px 0px 0px  orange;
+    cursor: pointer;
 }
 
 .logo{
@@ -51,5 +67,16 @@
 .color{
     color: currentColor;
     text-decoration: none;
+}
+
+.ms_hover:hover{
+    padding-bottom: 5px;
+    color: orange;
+    box-shadow: 0px 2px 0px 0px  rgb(255, 166, 0);
+    cursor: pointer;
+}
+
+.download-img{
+    width: 20px;
 }
 </style>
