@@ -37,7 +37,7 @@ export default {
 
 <template>
   <section class="d-flex flex-column min-vh-100">
-    <header class="d-flex justify-content-between overflow">
+    <header class="d-flex justify-content-md-between overflow align-items-center">
       <HeaderPage/>
     </header>
 
@@ -74,6 +74,8 @@ footer{
   min-height: 90px;
   background-color: #1E2A38;
   border-bottom: 5px solid orange;
+  border-top: 5px solid orange;
+
   color: white;
 
 

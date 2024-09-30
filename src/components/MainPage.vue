@@ -23,8 +23,8 @@
                     visualizza attestato
                 </div>
                 <div v-if="mostraImmagine" class="overlay">
-                    <img src="/img/Giovanni_Sorrentino_Attestato.png" alt="">
-                    <span @click="opendocument()" class="">Chiudi</span>
+                    <img class="attestato_img" src="/img/Giovanni_Sorrentino_Attestato.png" alt="">
+                    <span @click="opendocument()" class="chiudi">Chiudi</span>
                 </div>
 
             </div>
@@ -182,6 +182,29 @@ export default {
     z-index: 1000;
 }
 
+.chiudi{
+    padding: 10px;
+    margin-top: 12px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.chiudi:hover{
+    box-shadow: 0px 5px 2px 2px rgb(103, 67, 0);
+}
+
+.attestato_img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 80%;
+    z-index: 1001;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
 
 .ms-description-boolean {
     line-height: 36px;
@@ -236,7 +259,7 @@ export default {
 
 .ms-border {
     border-top: 5px solid orange;
-    border-bottom: 5px solid orange;
+    // border-bottom: 5px solid orange;
 
 }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="card ms-card">
-        <div class="card-header text-center">
+        <div class="ms_card_header card-header text-center">
             <img class="img-projects" :src="item.image" alt="">
         </div>
         <div class="card-body text-center">
@@ -37,14 +37,68 @@ import { RouterLink } from 'vue-router';
     height: 100%;
 }
 
-.ms-card:hover{
-    width: 420px;
-    box-shadow: 2px 5px 5px 2px #8FBF93;
+@media (min-width: 576px){
+    .ms-card:hover{
+        width: 165px;
+        box-shadow: 2px 5px 5px 0px orange;
+
+    }
+}
+
+
+@media (min-width: 768px){
+    .ms-card:hover{
+        width: 222px;
+        box-shadow: 2px 5px 5px 0px orange;
+        
+    }
+    
+}
+
+@media (min-width: 992px){
+    .ms-card:hover{
+        width: 305px;
+        box-shadow: 2px 5px 5px 0px orange;
+        
+    }
+    
+}
+
+
+@media (min-width: 1100px){
+    .ms-card:hover{
+        width: 305px;
+        box-shadow: 2px 5px 5px 0px orange;
+        
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .ms-card:hover{
+        width: 365px;
+        box-shadow: 2px 5px 5px 0px orange;
+        
+    }
+    
+}
+
+
+@media (min-width: 1400px){
+    .ms-card:hover{
+        width: 425px;
+        box-shadow: 2px 5px 5px 0px orange;
+        
+    }
     
 }
 
 .img-projects{
     max-width: 100%;
     max-height: 100px;
+}
+
+.ms_card_header{
+    background-color: rgb(244, 223, 205);
 }
 </style>
