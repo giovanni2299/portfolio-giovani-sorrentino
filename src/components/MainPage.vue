@@ -19,8 +19,11 @@
         <div class="ms_row ">
             <div class="col-6 ms-flex text-center ms_py">
                 <img class="boolean-logo" src="/img/boolean.png" alt="">
-                <div class="download-attestato d-flex jusify-content-center mt-4">
+                <div class="download-attestato d-flex jusify-content-center mt-4" @click="opendocument()">
                     visualizza attestato
+                </div>
+                <div v-if="mostraImmagine">
+                    <img src="/img/Giovanni_Sorrentino" alt="">
                 </div>
 
             </div>
@@ -129,7 +132,11 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            mostraImmagine:false,
+        }
+    }
 }
 </script>
 
