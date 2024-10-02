@@ -34,11 +34,11 @@
     </div>
 
 
-    <!--  @click="changeBooleanValue()" -->
+    <!--  :class="modal === false ? 'modal_class' : ''" @click="changeBooleanValue()" -->
 
     <div class="d-block d-md-none col-6 d-flex justify-content-center aling-items-center ms_position text-center">
         <img @click="opendocument()"  class="hamburger-menu" src="/img/icons-hamburgher.png" alt="">
-        <div  :class="modal === false ? 'modal_class' : ''">
+        <div  >
             <div v-if="mostraImmagine"  class="absolute">
 
                 <span @click="opendocument()" class="chiudi">Chiudi</span>
@@ -76,8 +76,8 @@
 export default {
     data() {
         return {
-            modal: false,
-            mostraImmagine: true,
+            // modal: false,
+            mostraImmagine: false,
 
         }
 
@@ -90,7 +90,8 @@ export default {
         opendocument(){
             this.mostraImmagine = !this.mostraImmagine
             console.log('ho cliccato opendocument')
-        }
+        },
+        
     }
 }
 </script>

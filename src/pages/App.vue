@@ -58,11 +58,6 @@ export default {
 @use '../style/general';
 
 
-#app{
-  overflow: clip;
-}
-
-
 .padding{
     padding: 20px 0;
 }
