@@ -3,7 +3,7 @@
         <div class="col-6 padding text-center">
             <img class="foto-personale" src="/img/foto-personale.jpeg" alt="">
         </div>
-        <div class="col-6 padding ms-description">
+        <div class="col-6 padding ms-description ms_font">
             Ciao a tutti, sono <strong> <mark>Giovanni Sorrentino,</mark> </strong> Junior Full Stack Web Developer.
             Ho recentemente completato un corso intensivo di formazione presso <strong> <mark>Boolean</mark></strong> ,
             una delle accademie più rinomate in Italia, il 17 luglio 2024.
@@ -162,6 +162,10 @@ export default {
     line-height: 36px;
 
 }
+
+// .ms_font{
+//     font-family: "Open Sans", sans-serif;
+// }
 
 .download-attestato {
     display: none;

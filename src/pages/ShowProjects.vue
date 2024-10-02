@@ -4,7 +4,11 @@
             <h1>{{store.data.projectsingle.name}}</h1>
         </div>
 
-        <img class="img-project p-2" :src="store.data.projectsingle.image" alt="">
+        <div>
+            <h3>Anteprima Progetto:</h3>
+
+            <img class="img-project p-2" :src="store.data.projectsingle.image" alt="">
+        </div>
 
         <div class="mb-2 mt-2">
             <h3 class="text-center">Linguaggi utilizzati</h3>
@@ -50,5 +54,8 @@ import store from '../../store';
 <style lang="scss" scoped>
 .img-project{
     max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
+
 </style>

@@ -1,17 +1,17 @@
 <template>
 
-    <div class="ms_col col-3-md text-center col-sm-6">
+    <div class="ms_col col-md-3 text-center col-sm-6">
         <RouterLink class="color" :to="{ name: 'home' }">
             <img class="logo" src="/img/logo-principale.png" alt="">
         </RouterLink>
     </div>
-    <div class="ms_col col-3-md text-center d-none d-md-block">
+    <div class="ms_col col-md-3 text-center d-none d-md-block">
         <RouterLink class="color ms_hover" :to="{ name: 'projects' }">
             Progetti
 
         </RouterLink>
     </div>
-    <div class="ms_col d-flex justify-content-around col-3-md text-center d-none d-md-flex">
+    <div class="ms_col d-flex justify-content-around col-md-3 text-center d-none d-md-flex">
 
         <div class="">
             <span class="ms_a">
@@ -44,9 +44,9 @@
 
                 <div class="ms_a mt-3 mb-3">
                     <img class="download-img" src="/img/dowload_icon.png" alt="">
-                    <a href="/img/Giovanni_Sorrentino_CV_EN.pdf" download="Giovanni_Sorrentino_CV_EN.pdf">
-                        EN_CV
-                    </a>
+                    <a href="/img/Giovanni_Sorrentino_CV.pdf" download="Giovanni_Sorrentino_CV.pdf">
+                    IT_CV
+                </a>
 
                 </div>
 

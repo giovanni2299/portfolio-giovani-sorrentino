@@ -85,11 +85,11 @@ export default {
 }
 
 .next:hover{
-  background-color:  #8FBF93;
+  background-color:  rgba(255, 166, 0, 0.6);
   border-radius: 5px;
 }
 .prev:hover{
-   background-color:  rgb(196, 99, 99);
+   background-color:  rgba(255, 166, 0, 0.6);
   border-radius: 5px;
 
 
