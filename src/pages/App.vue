@@ -46,7 +46,7 @@ export default {
       
     </main>
 
-    <footer class="d-flex align-items-center padding">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center padding">
       <FooterPage/>
     </footer>
   </section>
@@ -56,6 +56,12 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/palette' as *;
 @use '../style/general';
+
+
+#app{
+  overflow: clip;
+}
+
 
 .padding{
     padding: 20px 0;

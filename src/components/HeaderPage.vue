@@ -33,10 +33,16 @@
         </div>
     </div>
 
+
+    <!--  @click="changeBooleanValue()" -->
+
     <div class="d-block d-md-none col-6 d-flex justify-content-center aling-items-center ms_position text-center">
-        <img @click="changeBooleanValue()" class="hamburger-menu" src="/img/icons-hamburgher.png" alt="">
-        <div :class="modal === false ? 'modal_class' : ''">
-            <div class="absolute">
+        <img @click="opendocument()"  class="hamburger-menu" src="/img/icons-hamburgher.png" alt="">
+        <div  :class="modal === false ? 'modal_class' : ''">
+            <div v-if="mostraImmagine"  class="absolute">
+
+                <span @click="opendocument()" class="chiudi">Chiudi</span>
+
                 <RouterLink class="color ms_hover" :to="{ name: 'projects' }">
                     Progetti
 
@@ -71,6 +77,7 @@ export default {
     data() {
         return {
             modal: false,
+            mostraImmagine: true,
 
         }
 
@@ -78,7 +85,11 @@ export default {
     }, methods: {
         changeBooleanValue() {
             this.modal = !this.modal
-            console.log('ho cliccato')
+            // console.log('ho cliccato')
+        },
+        opendocument(){
+            this.mostraImmagine = !this.mostraImmagine
+            console.log('ho cliccato opendocument')
         }
     }
 }
@@ -155,5 +166,14 @@ export default {
     top: 0;
     right: 0;
     
+}
+
+
+.chiudi{
+    padding: 10px;
+    margin-top: 12px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 10px;
 }
 </style>
