@@ -1,9 +1,9 @@
 <template>
-    <section class="ms-backgroudcolor-light padding d-flex ms_border_b">
-        <div class="col-6 padding text-center">
+    <section class="ms-backgroudcolor-light padding d-flex flex-wrap ms_border_b">
+        <div class="col-12 col-md-6 padding text-center">
             <img class="foto-personale" src="/img/foto-personale.jpeg" alt="">
         </div>
-        <div class="col-6 padding ms-description ms_font">
+        <div class="col-12 col-md-6 padding ms-description ms_font">
             Ciao a tutti, sono <strong> <mark>Giovanni Sorrentino,</mark> </strong> Junior Full Stack Web Developer.
             Ho recentemente completato un corso intensivo di formazione presso <strong> <mark>Boolean</mark></strong> ,
             una delle accademie più rinomate in Italia, il 17 luglio 2024.
@@ -17,7 +17,9 @@
     <section class="ms-backgroudcolor-light">
 
         <div class="ms_row ">
-            <div class="col-6 ms-flex text-center ms_py">
+
+
+            <div class="col-12 d-none d-md-flex col-md-6 ms-flex text-center ms_py">
                 <img class="boolean-logo" src="/img/boolean.png" alt="">
                 <div class="download-attestato d-flex jusify-content-center mt-4" @click="opendocument()">
                     visualizza attestato
@@ -28,7 +30,8 @@
                 </div>
 
             </div>
-            <div class="col-6 ms-description-boolean padding ">
+            
+            <div class="col-12 col-md-6 ms-description-boolean padding ">
                 <strong><mark>Boolean</mark> </strong> è la <strong><mark>1° tech academy online</mark> </strong> che
                 offre a chiunque l'opportunità di imparare da zero a creare una pagina web,
                 utilizzando i <strong><mark>linguaggi di programmazione</mark></strong> e i
@@ -42,12 +45,24 @@
                 manager,
                 mettendo in pratica tutto ciò che avevamo appreso.
             </div>
+
+            <div class="col-12  d-md-none col-md-6 ms-flex text-center ms_py p-4">
+                <img class="boolean-logo" src="/img/boolean.png" alt="">
+                <div class="download-attestato d-flex jusify-content-center mt-4" @click="opendocument()">
+                    visualizza attestato
+                </div>
+                <div v-if="mostraImmagine" class="overlay">
+                    <img class="attestato_img" src="/img/Giovanni_Sorrentino_Attestato.png" alt="">
+                    <span @click="opendocument()" class="chiudi">Chiudi</span>
+                </div>
+
+            </div>
         </div>
 
     </section>
 
     <section class=" ms-background-coral padding text-center ms-carousel-section ms-border">
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="padding text-light">Tecniche e Linguaggi appresi</h2>
             <div class="ms-fix ms-background-coral">
                 <div class="carosello d-none d-md-block">
@@ -218,6 +233,7 @@ export default {
 
 .ms_row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ms-flex {
@@ -228,7 +244,7 @@ export default {
 }
 
 .ms_py {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .padding {

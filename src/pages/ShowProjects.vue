@@ -18,8 +18,10 @@
         </div>
         
 
-        <div>
-           {{store.data.projectsingle.description}} 
+        <div class="text-center mt-2 mb-3">
+            <h3>Descrizione:</h3>
+
+          <p class="ms_font"> {{store.data.projectsingle.description}} </p>
         </div>
 
     </div>
@@ -58,4 +60,8 @@ import store from '../../store';
 
 }
 
+
+.ms_font{
+    font-size: 20px;
+}
 </style>
