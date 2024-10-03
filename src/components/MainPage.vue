@@ -31,7 +31,7 @@
 
             </div>
             
-            <div class="col-12 col-md-6 ms-description-boolean padding ">
+            <div class="col-12 col-md-6 ms-description-boolean padding  tex-center">
                 <strong><mark>Boolean</mark> </strong> è la <strong><mark>1° tech academy online</mark> </strong> che
                 offre a chiunque l'opportunità di imparare da zero a creare una pagina web,
                 utilizzando i <strong><mark>linguaggi di programmazione</mark></strong> e i
@@ -101,44 +101,44 @@
 
 
 
-            <div class="d-md-none flex-wrap d-flex">
-                <div class="col-6 ">
+            <div class="d-md-none flex-wrap justify-content-center d-flex gap-3">
+                <div class="col-4 ">
                     <img src="/img/bootstrap.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/css.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/html.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/js.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/laravel.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/mysql.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/php.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/sass.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/vue.png" alt="">
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                     <img src="/img/vite.png" alt="">
                 </div>
             </div>
