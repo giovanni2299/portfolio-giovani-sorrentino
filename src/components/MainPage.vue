@@ -14,7 +14,7 @@
         </div>
     </section>
 
-    <section class="ms-backgroudcolor-light">
+    <section class="ms-backgroudcolor-light padding">
 
         <div class="ms_row ">
 
