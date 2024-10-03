@@ -95,10 +95,12 @@ import { RouterLink } from 'vue-router';
 
 .img-projects{
     max-width: 100%;
-    max-height: 100px;
+    border-radius: 5px;
+    
 }
 
 .ms_card_header{
     background-color: rgb(244, 223, 205);
+    padding: 20px;
 }
 </style>

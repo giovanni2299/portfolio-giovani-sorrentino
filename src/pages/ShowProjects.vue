@@ -4,7 +4,7 @@
             <h1>{{store.data.projectsingle.name}}</h1>
         </div>
 
-        <div>
+        <div >
             <h3>Anteprima Progetto:</h3>
 
             <img class="img-project p-2" :src="store.data.projectsingle.image" alt="">

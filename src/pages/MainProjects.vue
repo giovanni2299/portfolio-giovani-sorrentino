@@ -2,7 +2,7 @@
     <div class="container padding">
         <div class="row g-3">
             <div v-for="project in currentProjects" class="col-md-4">
-                <CardComponents class="h-100" :item="project" />
+                <CardComponents :item="project" />
 
             </div>
             
