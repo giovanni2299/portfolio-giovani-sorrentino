@@ -101,35 +101,44 @@
 
 
 
-            <div class="d-md-none d-sm-block">
-                <div>
+            <div class="d-md-none flex-wrap d-flex">
+                <div class="col-6 ">
                     <img src="/img/bootstrap.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/css.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/html.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/js.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/laravel.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/mysql.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/php.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/sass.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/vue.png" alt="">
                 </div>
-                <div>
+
+                <div class="col-6">
                     <img src="/img/vite.png" alt="">
                 </div>
             </div>
