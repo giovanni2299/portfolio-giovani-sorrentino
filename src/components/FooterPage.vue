@@ -8,8 +8,10 @@
         </div>
         <div class="col-12 col-sm-12 col-md-4 text-center">
             <h4 class="mb-3 ">Contattami</h4>
-            <a href="mailto:giovanni-sorrentino@hotmail.it">giovanni-sorrentino@hotmail.it</a>
-            <a href="tel:+393408601646" class="mt-3 ms_style">+39 3408601646</a>
+            <div class="mb-2">
+                <a class="ms_style" href="mailto:giovanni-sorrentino@hotmail.it">giovanni-sorrentino@hotmail.it</a>
+            </div>
+            <a  href="tel:+393408601646" class="mt-3 ms_style">+39 3408601646</a>
         </div>
         <div class="col-12 col-sm-12 col-md-4 text-center">
             <h4 class="mb-3 ">Seguimi su</h4>
@@ -53,5 +55,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.ms_style{
+    text-decoration: none;
+    color: currentColor;
 }
 </style>
