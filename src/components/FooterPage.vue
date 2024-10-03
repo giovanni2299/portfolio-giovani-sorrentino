@@ -8,8 +8,8 @@
         </div>
         <div class="col-12 col-sm-12 col-md-4 text-center">
             <h4 class="mb-3 ">Contattami</h4>
-            <a href="">giovanni-sorrentino@hotmail.it</a>
-            <p class="mt-3">+39 3408601646</p>
+            <a href="mailto:giovanni-sorrentino@hotmail.it">giovanni-sorrentino@hotmail.it</a>
+            <a href="tel:+393408601646" class="mt-3 ms_style">+39 3408601646</a>
         </div>
         <div class="col-12 col-sm-12 col-md-4 text-center">
             <h4 class="mb-3 ">Seguimi su</h4>

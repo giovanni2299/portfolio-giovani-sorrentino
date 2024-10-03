@@ -1,7 +1,7 @@
 <template>
     <div class="container padding">
         <div class="row g-3">
-            <div v-for="project in currentProjects" class="col-4">
+            <div v-for="project in currentProjects" class="col-md-4">
                 <CardComponents :item="project" />
 
             </div>
