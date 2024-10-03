@@ -12,7 +12,7 @@
 
         <div class="mb-3 mt-3">
             <h3 class="text-center">Linguaggi utilizzati</h3>
-            <ul class="ms-style d-flex gap-3 mb-2 mt-2 p-3">
+            <ul class="ms-style d-flex gap-3 mb-2 mt-2 p-3 justify-content-center justify-content-md-start">
                <li v-for="language in store.data.projectsingle.all_languages" class="ms_li_font">{{language}}</li> 
             </ul>
         </div>
@@ -66,7 +66,6 @@ import store from '../../store';
 .ms_font{
     font-size: 20px;
 }
-
 
 .ms_li_font{
     margin-top: 10px;
