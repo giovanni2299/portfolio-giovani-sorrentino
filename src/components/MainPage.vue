@@ -46,7 +46,7 @@
                 mettendo in pratica tutto ciò che avevamo appreso.
             </div>
 
-            <div class="col-12  d-md-none col-md-6 ms-flex text-center ms_py p-4">
+            <div class="col-12 mb-3 d-md-none col-md-6 ms-flex text-center ms_py p-4">
                 <img class="boolean-logo" src="/img/boolean.png" alt="">
                 <div class="download-attestato d-flex jusify-content-center mt-4" @click="opendocument()">
                     visualizza attestato
