@@ -10,15 +10,15 @@
             <img class="img-project p-2" :src="store.data.projectsingle.image" alt="">
         </div>
 
-        <div class="mb-2 mt-2">
+        <div class="mb-3 mt-3">
             <h3 class="text-center">Linguaggi utilizzati</h3>
-            <ul class="mb-2 mt-2" v-for="language in store.data.projectsingle.all_languages">
-               <li>{{language}}</li> 
+            <ul class="ms-style d-flex gap-3 mb-2 mt-2 p-3">
+               <li v-for="language in store.data.projectsingle.all_languages" class="ms_li_font">{{language}}</li> 
             </ul>
         </div>
         
 
-        <div class="text-center mt-2 mb-3">
+        <div class="text-center mt-3 mb-3">
             <h3>Descrizione:</h3>
 
           <p class="ms_font"> {{store.data.projectsingle.description}} </p>
@@ -59,9 +59,20 @@ import store from '../../store';
     background-color: rgba(0, 0, 0, 0.5);
 
 }
-
+.ms-style{
+    list-style: none;
+}
 
 .ms_font{
     font-size: 20px;
+}
+
+
+.ms_li_font{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    
 }
 </style>

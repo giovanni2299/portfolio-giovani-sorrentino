@@ -41,7 +41,7 @@
         <div  >
             <div v-if="mostraImmagine"  class="absolute">
 
-                <span @click="opendocument()" class="chiudi">Chiudi</span>
+                <div @click="opendocument()" class="chiudi">X</div>
 
                 <RouterLink class="color ms_hover" :to="{ name: 'projects' }">
                     Progetti
@@ -171,8 +171,11 @@ export default {
 
 
 .chiudi{
-    padding: 10px;
+    margin: 0 auto;
+    width: 40px;
+    padding:0 10px;
     margin-top: 12px;
+    margin-bottom: 5px;
     background-color: orange;
     cursor: pointer;
     border-radius: 10px;
