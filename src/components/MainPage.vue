@@ -53,7 +53,7 @@
                 </div>
                 <div v-if="mostraImmagine" class="overlay">
                     <img class="attestato_img" src="/img/Giovanni_Sorrentino_Attestato.png" alt="">
-                    <span @click="opendocument()" class="chiudi">X</span>
+                    <span @click="opendocument()" class="chiudi">Chiudi</span>
                 </div>
 
             </div>
